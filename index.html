@@ -101,11 +101,11 @@
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About  </a>
                 <a href="storage2.html" class="nav-item nav-link">Storage </a>
-
+                <a href="RealTimePrices.html" class="nav-item nav-link">Prices  </a>
+    
                 <a href="transport.html" class="nav-item nav-link">Transport</a>
                 <a href=" https://agrigain.company.site/products/" class="nav-item nav-link">Products </a>
-                <a href="Dron.html" class="nav-item nav-link">UAV Farming   </a>
-               
+                <a href="Dron.html" class="nav-item nav-link">UAV  </a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <a href="contact.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
@@ -457,6 +457,316 @@
         </div>
     </div>
     <!-- Service End -->
+
+<!-- Quote Start -->
+ 
+                   
+<h1>Weekly Pricing Update </h1>
+<div class="filter-bar">
+
+</div>
+
+<table id="products-table">
+  <thead>
+    <tr>
+      <th>Commodity </th>
+      <th>Price (Naria/Kg)</th>
+      <th>Region </th>
+      <th>State </th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Maize </td>
+      <td>508</td>
+      <td>Akko</td>
+      <td>Gombe </td>
+      
+    </tr>
+    <tr>
+      <td>Maize </td>
+      <td>498</td>
+      <td>Biu </td>
+      <td>Borno</td>
+
+    </tr>
+    <tr>
+      <td>Maize</td>
+      <td>573</td>
+      <td>Potiskum</td>
+      <td>Yobe </td>
+      
+    </tr>
+    <tr>
+      <td>Maize </td>
+      <td>535</td>
+      <td>Kaduna </td>
+      <td>Kaduna </td>
+      
+    </tr>
+
+    <tr>
+        <td>Soya Beans  </td>
+        <td>525</td>
+        <td>Akko  </td>
+        <td>Gombe </td>
+        
+      </tr>
+
+      <tr>
+        <td>Soya Beans  </td>
+        <td>515</td>
+        <td>Kano </td>
+        <td>Kano  </td>
+        
+      </tr>
+      <tr>
+        <td>Soya Beans  </td>
+        <td>445</td>
+        <td>Qwer East </td>
+        <td>Benue  </td>
+        
+      </tr>
+      <tr>
+        <td>Rice Paddy  </td>
+        <td>495</td>
+        <td>Kano  </td>
+        <td>Kano</td>
+        
+      </tr>
+
+
+      <tr>
+        <td>Millet  </td>
+        <td>479</td>
+        <td>Potiskum </td>
+        <td>Yobe </td>
+        
+      </tr>
+      <tr>
+        <td>White Cowpea  </td>
+        <td>898</td>
+        <td>Biu </td>
+        <td>Borno  </td>
+        
+      </tr>
+
+      <tr>
+        <td>White Sorghum  </td>
+        <td>441</td>
+        <td>Potiskum </td>
+        <td>Yobe  </td>
+        
+      </tr>
+
+
+
+
+
+
+
+
+  </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+
+
+
+<style>
+    body {
+font-family: sans-serif;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+table th, table td {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+table th {
+text-align: left;
+}
+
+.filter-bar {
+margin-bottom: 10px;
+}
+
+.filter-bar input {
+padding: 8px;
+border: 1px solid #ccc;
+width: 100%;
+}
+</style>
+
+<script>
+
+$(function() {
+// Enable table sorting
+$("#products-table").sortable({
+axis: "y",
+cursor: "move"
+});
+
+// Enable product name filtering
+$("#filter").on("keyup", function() {
+var filter = $(this).val().toLowerCase();
+$("#products-table tbody tr").each(function() {
+var productName = $(this).find("td:first").text().toLowerCase();
+if (productName.indexOf(filter) > -1) {
+$(this).show();
+} else {
+$(this).hide();
+}
+});
+});
+});
+</script>
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quote End -->
+
+
+<br><br><br> 
+<h1>Reach Out To Order </h1>
+
+<form action="https://formspree.io/js/formspree.js " method="POST">
+<div class="field">
+<label for="commodity">Commodity:</label>
+<input type="text" id="commodity" name="commodity" required>
+</div>
+<div class="field">
+<label for="quantity-needed">Quantity Needed:</label>
+<input type="number" id="quantity-needed" name="quantity-needed" required>
+</div>
+<div class="field">
+<label for="quantity-requirements">Quantity Requirements:</label>
+<textarea id="quantity-requirements" name="quantity-requirements"></textarea>
+</div>
+<div class="field">
+<label for="delivery">Delivery Address:</label>
+<input type="text" id="delivery" name="delivery" required>
+</div>
+<div class="field">
+<label for="drop-off">Drop-Off Date and Time:</label>
+<input type="datetime-local" id="drop-off" name="drop-off" required>
+</div>
+<div class="field">
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+</div>
+<button type="submit">Submit Order</button>
+</form>
+
+<script src="script.js"></script>
+<style>
+
+body {
+font-family: sans-serif;
+}
+
+form {
+display: flex;
+flex-direction: column;
+width: 500px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.field {
+margin-bottom: 15px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input, textarea {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+textarea {
+height: 100px;
+}
+
+button {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #45A049;
+}
+</style>
+<script>
+// Replace YOUR_FORM_ID with your actual Formspree form ID
+const formId = " https://formspree.io/js/formspree.js";
+
+document.querySelector("form").addEventListener("submit", function(event) {
+event.preventDefault();
+
+const data = new FormData(this);
+
+fetch(`https://formspree.io/${formId}`, {
+method: "POST",
+body: data,
+})
+.then(() => {
+alert("Order submitted successfully!");
+this.reset();
+})
+.catch(error => {
+console.error("Error submitting form:", error);
+alert("An error occurred. Please try again later.");
+});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- Quote Start -->
