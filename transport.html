@@ -108,9 +108,9 @@
             <a href="storage2.html" class="nav-item nav-link">Storage </a>
             <a href="RealTimePrices.html" class="nav-item nav-link">Prices  </a>
 
-            <a href="transport.html" class="nav-item nav-link">Transport</a>
+          
             <a href=" https://agrigain.company.site/products/" class="nav-item nav-link">Products </a>
-            <a href="Dron.html" class="nav-item nav-link">UAV  </a>
+           
             <a href="contact.html" class="nav-item nav-link">Contact</a>
    </div>
             <a href="export.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Export <i class="fa fa-arrow-right ms-3"></i></a>
@@ -131,337 +131,216 @@
 
 
 
-
- <!-- Quote Start -->
- <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="A4.jpg">
-    <div class="container py-5">
+<!-- Custom Transport Booking Section Start -->
+<section class="transport-booking-section py-5" style="background: linear-gradient(135deg, #27ae60 60%, #f1c40f 100%);">
+    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-9">
-                <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-5 text-center mb-5">Book A Delivery</h1>
-                    <h4 class="mb-0">Fill out the form  below and our staff will be right with you <br><br> </h4>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea  class="form-control bg-dark border-4" placeholder="Name " id="message" style="height: 120px"></textarea>
-                                    <label for="message">Name </label>
+            <div class="col-lg-8">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4" style="color:#27ae60; font-weight:700;">Book Your Delivery</h2>
+                        <p class="text-center mb-5 text-muted">Complete the form below and our team will contact you promptly.</p>
+                        <form action="https://formspree.io/f/xnqkeeok" method="POST" id="transportForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" name="name" class="form-control bg-light" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" name="phone" class="form-control bg-light" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" name="email" class="form-control bg-light" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Type of Commodity</label>
+                                    <input type="text" name="commodity_type" class="form-control bg-light" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Commodity Quantity</label>
+                                    <input type="text" name="commodity_quantity" class="form-control bg-light" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Duration of Storage</label>
+                                    <input type="text" name="storage_duration" class="form-control bg-light">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Pickup Location</label>
+                                    <select name="pickup_location" class="form-select bg-light" required>
+                                        <option value="">Pick Up State</option>
+                                        <option value="Abia">Abia</option>
+                                        <option value="Adamawa">Adamawa</option>
+                                        <option value="Akwa Ibom">Akwa Ibom</option>
+                                        <option value="Anambra">Anambra</option>
+                                        <option value="Bauchi">Bauchi</option>
+                                        <option value="Bayelsa">Bayelsa</option>
+                                        <option value="Benue">Benue</option>
+                                        <option value="Borno">Borno</option>
+                                        <option value="Cross River">Cross River</option>
+                                        <option value="Delta">Delta</option>
+                                        <option value="Ebonyi">Ebonyi</option>
+                                        <option value="Edo">Edo</option>
+                                        <option value="Ekiti">Ekiti</option>
+                                        <option value="Enugu">Enugu</option>
+                                        <option value="Gombe">Gombe</option>
+                                        <option value="Imo">Imo</option>
+                                        <option value="Jigawa">Jigawa</option>
+                                        <option value="Kaduna">Kaduna</option>
+                                        <option value="Kano">Kano</option>
+                                        <option value="Katsina">Katsina</option>
+                                        <option value="Kebbi">Kebbi</option>
+                                        <option value="Kogi">Kogi</option>
+                                        <option value="Kwara">Kwara</option>
+                                        <option value="Lagos">Lagos</option>
+                                        <option value="Nasarawa">Nasarawa</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Ogun">Ogun</option>
+                                        <option value="Ondo">Ondo</option>
+                                        <option value="Osun">Osun</option>
+                                        <option value="Oyo">Oyo</option>
+                                        <option value="Plateau">Plateau</option>
+                                        <option value="Rivers">Rivers</option>
+                                        <option value="Sokoto">Sokoto</option>
+                                        <option value="Taraba">Taraba</option>
+                                        <option value="Yobe">Yobe</option>
+                                        <option value="Zamfara">Zamfara</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Drop-off Location</label>
+                                    <select name="dropoff_location" class="form-select bg-light" required>
+                                        <option value="">Drop Off State</option>
+                                        <option value="Abia">Abia</option>
+                                        <option value="Adamawa">Adamawa</option>
+                                        <option value="Akwa Ibom">Akwa Ibom</option>
+                                        <option value="Anambra">Anambra</option>
+                                        <option value="Bauchi">Bauchi</option>
+                                        <option value="Bayelsa">Bayelsa</option>
+                                        <option value="Benue">Benue</option>
+                                        <option value="Borno">Borno</option>
+                                        <option value="Cross River">Cross River</option>
+                                        <option value="Delta">Delta</option>
+                                        <option value="Ebonyi">Ebonyi</option>
+                                        <option value="Edo">Edo</option>
+                                        <option value="Ekiti">Ekiti</option>
+                                        <option value="Enugu">Enugu</option>
+                                        <option value="Gombe">Gombe</option>
+                                        <option value="Imo">Imo</option>
+                                        <option value="Jigawa">Jigawa</option>
+                                        <option value="Kaduna">Kaduna</option>
+                                        <option value="Kano">Kano</option>
+                                        <option value="Katsina">Katsina</option>
+                                        <option value="Kebbi">Kebbi</option>
+                                        <option value="Kogi">Kogi</option>
+                                        <option value="Kwara">Kwara</option>
+                                        <option value="Lagos">Lagos</option>
+                                        <option value="Nasarawa">Nasarawa</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Ogun">Ogun</option>
+                                        <option value="Ondo">Ondo</option>
+                                        <option value="Osun">Osun</option>
+                                        <option value="Oyo">Oyo</option>
+                                        <option value="Plateau">Plateau</option>
+                                        <option value="Rivers">Rivers</option>
+                                        <option value="Sokoto">Sokoto</option>
+                                        <option value="Taraba">Taraba</option>
+                                        <option value="Yobe">Yobe</option>
+                                        <option value="Zamfara">Zamfara</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Expected Date of Storage</label>
+                                    <input type="date" name="expected_storage_date" class="form-control bg-light">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Expected Date of Pick Up</label>
+                                    <input type="date" name="expected_pickup_date" class="form-control bg-light">
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control bg-dark border-4" placeholder="Phone Number" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Phone Number </label>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control bg-dark border-4" placeholder="Email Address" id="message" style="height: 100px " ></textarea>
-                                            <label for="message"> Email Address</label>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control bg-dark border-4" placeholder="Type of commodity " id="message" style="height: 100px"></textarea>
-                                                <label for="message">Type of Commodity  </label>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-floating">
-                                                    <textarea class="form-control bg-dark border-4" placeholder=" Commodity Details" id="message" style="height: 120px"></textarea>
-                                                    <label for="message">Commodity Quantity  </label>
-                                                </div>
-                                               
-                                                <div class="col-12">
-                                                    <div class="form-floating">
-                                                        <textarea class="form-control bg-dark border-4" placeholder="Durations of Storage  " id="message" style="height: 120px"></textarea>
-                                                        <label for="message">Durations Of Storage  </label>
-                                                    </div>
-                                                   
-
-
-                                                <div class="row g-3">
-                                                    <div class="col-sm-6">
-                                                      <label for="pickup_location">Pickup Location:</label>
-                                                      <select class="form-control" id="pickup_location">
-                                                        <option value="">Pick Up State  </option>
-                                                        <option value="Abia">Abia</option>
-
-                                                        <option
-                                                         
-                                                        value="Adamawa">Adamawa</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Akwa Ibom">Akwa Ibom</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Anambra">Anambra</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Bauchi">Bauchi</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Bayelsa">Bayelsa</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Benue">Benue</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Borno">Borno</option>
-                                                        
-                                                        
-                                                        <option
-                                                         
-                                                        value="Cross River">Cross River</option>
-                                                        
-                                                        <option value="Delta">Delta</option>
-                                                        
-                                                        <option value="Ebonyi">Ebonyi</option>
-                                                        <option value="Edo">Edo</option>
-                                                        <option value="Ekiti">Ekiti</option>
-                                                        <option value="Enugu">Enugu</option>
-                                                        
-                                                        
-                                                        <option
-                                                         
-                                                        value="Gombe">Gombe</option>
-                                                        <option
- 
-value="Imo">Imo</option>
-
-
-<option
- 
-value="Jigawa">Jigawa</option>
-
-
-<option value="Kaduna">Kaduna</option>
-<option value="Kano">Kano</option>
-<option value="Katsina">Katsina</option>
-<option value="Kebbi">Kebbi</option>
-<option value="Kogi">Kogi</option>
-<option value="Kwara">Kwara</option>
-
-<option value="Lagos">Lagos</option>
-
-
-<option
- 
-value="Nasarawa">Nasarawa</option>
-
-<option
- 
-value="Niger">Niger</option>
-
-
-<option
- 
-value="Ogun">Ogun</option>
-
-<option
- 
-value="Ondo">Ondo</option>
-
-<option
- 
-value="Osun">Osun</option>
-
-<option
- 
-value="Oyo">Oyo</option>
-
-<option value="Plateau">Plateau</option>
-
-<option value="Rivers">Rivers</option>
-
-<option value="Sokoto">Sokoto</option>
-<option value="Sokoto">Sokoto</option>
-
-<option value="Taraba">Taraba</option>
-
-<option value="Yobe">Yobe</option>
-<option value="Zamfara">Zamfara</option>
-                                                      </select>
-                                                    </div>
-
-
-                                                    <div class="col-sm-6">
-                                                      <label for="dropoff_location">Drop-off Location:</label>
-                                                      <select class="form-control" id="dropoff_location">
-                                                        <option value="">Drop Off State </option>
-                                                        <option value="Abia">Abia</option>
-
-                                                        <option
-                                                         
-                                                        value="Adamawa">Adamawa</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Akwa Ibom">Akwa Ibom</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Anambra">Anambra</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Bauchi">Bauchi</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Bayelsa">Bayelsa</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Benue">Benue</option>
-                                                        
-                                                        <option
-                                                         
-                                                        value="Borno">Borno</option>
-                                                        
-                                                        
-                                                        <option
-                                                         
-                                                        value="Cross River">Cross River</option>
-                                                        
-                                                        <option value="Delta">Delta</option>
-                                                        
-                                                        <option value="Ebonyi">Ebonyi</option>
-                                                        <option value="Edo">Edo</option>
-                                                        <option value="Ekiti">Ekiti</option>
-                                                        <option value="Enugu">Enugu</option>
-                                                        
-                                                        
-                                                        <option
-                                                         
-                                                        value="Gombe">Gombe</option>
-                                                        <option
- 
-value="Imo">Imo</option>
-
-
-<option
- 
-value="Jigawa">Jigawa</option>
-
-
-<option value="Kaduna">Kaduna</option>
-<option value="Kano">Kano</option>
-<option value="Katsina">Katsina</option>
-<option value="Kebbi">Kebbi</option>
-<option value="Kogi">Kogi</option>
-<option value="Kwara">Kwara</option>
-
-<option value="Lagos">Lagos</option>
-
-
-<option
- 
-value="Nasarawa">Nasarawa</option>
-
-<option
- 
-value="Niger">Niger</option>
-
-
-<option
- 
-value="Ogun">Ogun</option>
-
-<option
- 
-value="Ondo">Ondo</option>
-
-<option
- 
-value="Osun">Osun</option>
-
-<option
- 
-value="Oyo">Oyo</option>
-
-<option value="Plateau">Plateau</option>
-
-<option value="Rivers">Rivers</option>
-
-<option value="Sokoto">Sokoto</option>
-<option value="Sokoto">Sokoto</option>
-
-<option value="Taraba">Taraba</option>
-
-<option value="Yobe">Yobe</option>
-<option value="Zamfara">Zamfara</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-floating">
-                                                        <textarea class="form-control bg-dark border-4" placeholder="Speacial Request " id="message" style="height: 100px"></textarea>
-                                                        <label for="message">Expected Date of Storage  </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-floating">
-                                                        <textarea class="form-control bg-dark border-4" placeholder="Speacial Request " id="message" style="height: 100px"></textarea>
-                                                        <label for="message">Expected Date of Pick Up  </label>
-                                                    </div>
-                                                </div>              
-                                                  
-                                                <div class="col-12">
-                                                    <div class="form-floating">
-                                                        <textarea class="form-control bg-dark border-4" placeholder="Leave a message here" id="message" style="height: 180px"></textarea>
-                                                        <label for="message">Message</label>
-                                                    </div>   
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control bg-dark border-4" placeholder="Speacial Request " id="message" style="height: 100px"></textarea>
-                                <label for="message">Special Request </label>
+                                    <label class="form-label">Special Request</label>
+                                    <textarea name="special_request" class="form-control bg-light" rows="2"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea name="message" class="form-control bg-light" rows="3"></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button class="btn btn-success px-5 py-2" type="submit" style="font-size:1.2rem;">Submit</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
+                        </form>
+                        <div id="formSuccess" class="alert alert-success mt-4 d-none text-center" role="alert">
+                            Thank you! Your request has been submitted.
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
-</div>
-<!-- Quote End -->
-<script>
-    <script src="https://formspree.io/js/formspree.js"></script>
-<script>
-  var form = document.getElementById("https://formspree.io/f/xnqkeeok ");
+</section>
+<!-- Custom Transport Booking Section End -->
 
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    // Get the form data
-    var formData = new FormData(form);
-    
-    // Send the form data to Formspree
-    fetch("https://formspree.io/f/" + yourFormId, {
-      method: "POST",
-      body: formData,
-    })
-      .then(function(response) {
-        console.log("Form submitted successfully!");
-        // Reset the form
-        form.reset();
-      })
-      .catch(function(error) {
-        console.error("Error submitting form:", error);
-      });
-  });
+<style>
+    .transport-booking-section {
+        background-image: url('A4.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .transport-booking-section:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255,255,255,0.7);
+        z-index: 1;
+    }
+    .transport-booking-section .container {
+        position: relative;
+        z-index: 2;
+    }
+    .transport-booking-section .card {
+        border-radius: 2rem;
+        border: none;
+    }
+    .transport-booking-section .form-label {
+        font-weight: 600;
+        color: #27ae60;
+    }
+    .transport-booking-section .btn-success {
+        background: #27ae60;
+        border: none;
+        border-radius: 2rem;
+        transition: background 0.2s;
+    }
+    .transport-booking-section .btn-success:hover {
+        background: #219150;
+    }
+</style>
+<script>
+    // Simple AJAX form submission for Formspree
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('transportForm');
+        var successMsg = document.getElementById('formSuccess');
+        if(form){
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                var data = new FormData(form);
+                fetch(form.action, {
+                    method: "POST",
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                }).then(function(response){
+                    if(response.ok){
+                        form.reset();
+                        successMsg.classList.remove('d-none');
+                    }
+                });
+            });
+        }
+    });
 </script>
-</script>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
 
