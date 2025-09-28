@@ -85,9 +85,7 @@
                     <li class="nav-item">
                         <a href="about.html" class="nav-link px-3 fw-semibold text-dark">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="Framsupply.html" class="nav-link px-3 fw-semibold text-dark">Farm Supply </a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a href="storage2.html" class="nav-link px-3 fw-semibold text-dark">Storage</a>
                     </li>
@@ -463,7 +461,160 @@
         </div>
     </div>
 </div>
-<!-- About End -->
+<!-- Farm Supply - Modern Horizontal Scroll Cards -->
+<style>
+.farm-supply-scroll-section {
+    background: linear-gradient(120deg, #fff 60%, #eaf7ea 100%);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(60, 120, 60, 0.10);
+    padding: 2.5rem 2rem;
+    margin-bottom: 3rem;
+    overflow-x: auto;
+}
+.farm-supply-scroll-header {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.farm-supply-scroll-header .subtitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #38843a;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background: #eaf7ea;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+}
+.farm-supply-scroll-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+.farm-supply-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scroll-snap-type: x mandatory;
+}
+.farm-supply-card-alt {
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px 0 rgba(69,160,73,0.10);
+    min-width: 320px;
+    max-width: 340px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.farm-supply-card-alt:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 32px 0 rgba(69,160,73,0.15);
+}
+.farm-supply-card-alt img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    transition: filter 0.2s;
+}
+.farm-supply-card-alt-content {
+    padding: 1.1rem 1rem;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.farm-supply-card-alt-content h4 {
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #45A049;
+    margin-bottom: 0.5rem;
+}
+.farm-supply-card-alt-content p {
+    color: #444;
+    font-size: 0.98rem;
+    margin-bottom: 0.7rem;
+}
+@media (max-width: 767px) {
+    .farm-supply-scroll-section {
+        padding: 1.2rem 0.5rem;
+    }
+    .farm-supply-scroll-header h1 {
+        font-size: 1.2rem;
+    }
+    .farm-supply-card-alt {
+        min-width: 220px;
+        max-width: 240px;
+    }
+    .farm-supply-card-alt img {
+        height: 90px;
+    }
+}
+</style>
+<div class="container-xxl farm-supply-scroll-section">
+    <div class="farm-supply-scroll-header">
+        <span class="subtitle">Farm Supply</span>
+        <h1>Our Agro Products</h1>
+    </div>
+    <div class="farm-supply-scroll">
+        <div class="farm-supply-card-alt">
+            <img src="s1.jpg" alt="Sesame Seeds">
+            <div class="farm-supply-card-alt-content">
+                <h4>Sesame Seeds</h4>
+                <p>High-quality sesame seeds sourced from trusted Nigerian farmers, ideal for oil extraction and food processing.</p>
+            </div>
+        </div>
+        <div class="farm-supply-card-alt">
+            <img src="s2.jpg" alt="Tumeric">
+            <div class="farm-supply-card-alt-content">
+                <h4>Tumeric</h4>
+                <p>Fresh and dried tumeric roots, perfect for culinary, medicinal, and industrial uses.</p>
+            </div>
+        </div>
+        <div class="farm-supply-card-alt">
+            <img src="s3.jpg" alt="Soya Beans">
+            <div class="farm-supply-card-alt-content">
+                <h4>Soya Beans</h4>
+                <p>Premium soya beans for food processing, animal feed, and export markets.</p>
+            </div>
+        </div>
+        <div class="farm-supply-card-alt">
+            <img src="s4.jpg" alt="Hibiscus">
+            <div class="farm-supply-card-alt-content">
+                <h4>Hibiscus</h4>
+                <p>Vibrant hibiscus flowers, widely used for teas, beverages, and natural colorants.</p>
+            </div>
+        </div>
+        <div class="farm-supply-card-alt">
+            <img src="s5.jpg" alt="Corn Starch">
+            <div class="farm-supply-card-alt-content">
+                <h4>Corn Starch</h4>
+                <p>Finely processed corn starch suitable for food, pharmaceutical, and industrial applications.</p>
+            </div>
+        </div>
+        <div class="farm-supply-card-alt">
+            <img src="s6.jpg" alt="Cashew">
+            <div class="farm-supply-card-alt-content">
+                <h4>Cashew</h4>
+                <p>Top-grade cashew nuts, carefully harvested and processed for export and local consumption.</p>
+            </div>
+        </div>
+        <div class="farm-supply-card-alt">
+            <img src="s8.jpg" alt="Cocoa Beans">
+            <div class="farm-supply-card-alt-content">
+                <h4>Cocoa Beans</h4>
+                <p>Premium cocoa beans, perfect for chocolate production and confectionery industries.</p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container-xxl projects-section-alt">
     <div class="projects-header-alt">
         <span class="subtitle">Our Projects</span>
@@ -520,7 +671,6 @@
         </div>
     </div>
 </div>
-
 <!-- Services Section - Vertical Timeline Style -->
 <style>
 .services-section-alt {
